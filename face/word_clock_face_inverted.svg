@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="word_clock_face_inverted.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4802"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4804" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4802"
+       id="linearGradient4806"
+       x1="75.803329"
+       y1="514.02359"
+       x2="675.49864"
+       y2="514.02359"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       id="filter4808"
+       inkscape:label="Invert"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Invert colors"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix4810"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix4812"
+         in="fbSourceGraphic"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="159.28629"
+     inkscape:cy="535.33971"
+     inkscape:document-units="px"
+     inkscape:current-layer="g4753"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1030"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none"
+       id="rect3755"
+       width="673.22833"
+       height="814.96063"
+       x="-98.04274"
+       y="-20.832401" />
+    <rect
+       style="fill:none"
+       id="rect3757"
+       width="400"
+       height="630"
+       x="124.28571"
+       y="371.58997" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3811"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:56px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3813"><rect
+           id="rect3815"
+           width="421"
+           height="63"
+           x="76"
+           y="117.36218"
+           style="font-size:56px" /></flowRegion><flowPara
+         id="flowPara3817"></flowPara></flowRoot>    <g
+       id="g4658">
+      <g
+         id="g4753">
+        <rect
+           style="fill:#000000;stroke:#000000;stroke-width:1.05983900999999991px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+           id="rect2985"
+           width="636.73541"
+           height="849.33386"
+           x="55.203724"
+           y="93.409538" />
+        <g
+           id="g4706"
+           style="fill:#000000;fill-opacity:1;filter:url(#filter4808)">
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8"
+             y="191.5368"
+             x="68.174423"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;font-family:Monospace;-inkscape-font-specification:Monospace Bold;fill:#000000;fill-opacity:1"
+               y="191.5368"
+               x="68.174423"
+               id="tspan3821-21"
+               sodipodi:role="line"><tspan
+   id="tspan4136"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">ES</tspan>F<tspan
+   id="tspan4060"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold">IST</tspan>ROH<tspan
+   id="tspan4144"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">ZEHN</tspan>E</tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-9"
+             y="268.92319"
+             x="74.643173"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;font-family:Monospace;-inkscape-font-specification:Monospace Bold;fill:#000000;fill-opacity:1"
+               y="268.92319"
+               x="74.643173"
+               id="tspan3821-21-6"
+               sodipodi:role="line"><tspan
+   id="tspan4152"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">VIERTEL</tspan>WE<tspan
+   id="tspan4414"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">FÜNF</tspan>I</tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-2"
+             y="346.30957"
+             x="72.217392"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+               y="346.30957"
+               x="72.217392"
+               id="tspan3821-21-4"
+               sodipodi:role="line">ZWANZIG<tspan
+   id="tspan4454"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">HN</tspan>NACH<tspan
+   id="tspan4478"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">A</tspan></tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-9-8"
+             y="423.69595"
+             x="71.268173"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;font-family:Monospace;-inkscape-font-specification:Monospace Bold;fill:#000000;fill-opacity:1"
+               y="423.69595"
+               x="71.268173"
+               id="tspan3821-21-6-9"
+               sodipodi:role="line"><tspan
+                 id="tspan4218"
+                 style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold"><tspan
+   id="tspan4482"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">CHT</tspan>VOR<tspan
+   id="tspan4498"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">ENVO</tspan>HALB</tspan></tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-5"
+             y="501.08234"
+             x="68.174423"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+               y="501.08234"
+               x="68.174423"
+               id="tspan3821-21-2"
+               sodipodi:role="line">EINS<tspan
+   id="tspan4514"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">NIM</tspan>ZWEI<tspan
+   id="tspan4526"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">MAN</tspan></tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-9-0"
+             y="578.46875"
+             x="71.408798"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;font-family:Monospace;-inkscape-font-specification:Monospace Bold;fill:#000000;fill-opacity:1"
+               y="578.46875"
+               x="71.408798"
+               id="tspan3821-21-6-7"
+               sodipodi:role="line"><tspan
+                 id="tspan4270"
+                 style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold"><tspan
+   id="tspan4530"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">U</tspan>DREI<tspan
+   id="tspan4538"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">E</tspan>ELF<tspan
+   id="tspan4548"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">L</tspan>VIER</tspan></tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-2-3"
+             y="655.8551"
+             x="67.225204"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+               y="655.8551"
+               x="67.225204"
+               id="tspan3821-21-4-6"
+               sodipodi:role="line">FÜNF<tspan
+   id="tspan4558"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">UN</tspan>SECHS<tspan
+   id="tspan4564"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">DEM</tspan></tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-9-8-5"
+             y="733.24152"
+             x="71.830673"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;font-family:Monospace;-inkscape-font-specification:Monospace Bold;fill:#000000;fill-opacity:1"
+               y="733.24152"
+               x="71.830673"
+               id="tspan3821-21-6-9-5"
+               sodipodi:role="line">M<tspan
+   id="tspan4322"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">SIEBEN<tspan
+   id="tspan4576"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">A2</tspan>ACHT</tspan>0</tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-5-1"
+             y="810.62787"
+             x="67.893173"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;font-family:Monospace;-inkscape-font-specification:Monospace Bold;fill:#000000;fill-opacity:1"
+               y="810.62787"
+               x="67.893173"
+               id="tspan3821-21-2-0"
+               sodipodi:role="line"><tspan
+                 id="tspan4354"
+                 style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold"><tspan
+   id="tspan4588"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">12A</tspan>NEUN<tspan
+   id="tspan4596"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">LLE</tspan>ZEHN</tspan></tspan></text>
+          <text
+             sodipodi:linespacing="120%"
+             id="text3819-8-9-0-9"
+             y="888.01428"
+             x="72.217392"
+             style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+             xml:space="preserve"><tspan
+               style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold"
+               y="888.01428"
+               x="72.217392"
+               id="tspan3821-21-6-7-8"
+               sodipodi:role="line">ZWÖLF<tspan
+   id="tspan4606"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">SLI</tspan>UHR<tspan
+   id="tspan4616"
+   style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:120.00000476999998966%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;font-family:Monospace;-inkscape-font-specification:Monospace Bold">EBE</tspan></tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

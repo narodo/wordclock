@@ -1,0 +1,71 @@
+Circuit: * Z:\work\sim\current_mirror.asc
+
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:      d6          d5          d4          d3          d2
+Model:  aot-2015    aot-2015    aot-2015    aot-2015    aot-2015
+Id:      1.67e-02    1.67e-02    1.67e-02    1.74e-02    1.74e-02
+Vd:      2.78e+00    2.78e+00    2.78e+00    2.78e+00    2.78e+00
+Req:     9.65e+00    9.65e+00    9.65e+00    9.27e+00    9.27e+00
+CAP:     2.30e-09    2.30e-09    2.30e-09    2.31e-09    2.31e-09
+
+Name:      d1
+Model:  aot-2015
+Id:      1.80e-02
+Vd:      2.79e+00
+Req:     8.94e+00
+CAP:     2.31e-09
+
+                        --- Bipolar Transistors ---
+Name:       q4          q3          q2          q1
+Model:    bc847c      bc847c      bc847c      bc847c
+Ib:       3.77e-05    3.71e-05    3.84e-05    3.65e-05
+Ic:       1.67e-02    1.74e-02    1.60e-02    1.80e-02
+Vbe:      7.15e-01    7.15e-01    7.15e-01    7.15e-01
+Vbc:     -2.87e+00   -5.72e+00    0.00e+00   -8.49e+00
+Vce:      3.59e+00    6.43e+00    7.15e-01    9.21e+00
+BetaDC:   4.42e+02    4.68e+02    4.16e+02    4.93e+02
+Gm:       5.61e-01    5.85e-01    5.37e-01    6.08e-01
+Rpi:      6.83e+02    6.95e+02    6.71e+02    7.06e+02
+Rx:       6.20e+00    6.21e+00    6.19e+00    6.22e+00
+Ro:       3.02e+03    3.07e+03    2.98e+03    3.11e+03
+Cbe:      2.99e-10    3.01e-10    2.99e-10    3.05e-10
+Cbc:      1.01e-12    7.95e-13    2.11e-12    6.87e-13
+Cjs:      0.00e+00    0.00e+00    0.00e+00    0.00e+00
+BetaAC:   3.84e+02    4.07e+02    3.60e+02    4.30e+02
+Cbx:      6.21e-13    4.89e-13    1.30e-12    4.22e-13
+Ft:       2.97e+08    3.08e+08    2.82e+08    3.16e+08
+
+                        --- VDMOSFET Transistors ---
+Name:          m1
+Model:        bss84
+Id:         -1.67e-02
+Vgs:        -1.20e+01
+Vds:        -7.85e-02
+Vth:        -2.10e+00
+Gm:          1.69e-03
+Gds:         1.97e+00
+Cgs:         2.00e-11
+Cgd:         4.00e-11
+Cbody:       9.63e-12
+
+
+
+Date: Thu Nov 29 23:10:53 2012
+Total elapsed time: 0.122 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 34
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 34
+fillins = 4
+solver = Normal
+Matrix Compiler1: 2.43 KB object code size
+Matrix Compiler2:     232 opcodes
+

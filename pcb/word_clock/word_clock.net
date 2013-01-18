@@ -1,0 +1,1215 @@
+# EESchema Netlist Version 1.1 created  Mon 10 Dec 2012 09:42:11 PM CET
+(
+ ( /50BD1864 $noname  X1 32.768khz {Lib=CRYSTAL}
+  (    1 N-000058 )
+  (    2 N-000001 )
+ )
+ ( /50BD0B44 $noname  C3 100n {Lib=C}
+  (    1 GND )
+  (    2 +5V )
+ )
+ ( /50BD0B43 $noname  C4 100n {Lib=C}
+  (    1 GND )
+  (    2 +5V )
+ )
+ ( /50BD0B41 $noname  C5 100n {Lib=C}
+  (    1 GND )
+  (    2 +5V )
+ )
+ ( /50BD0B37 $noname  C6 100n {Lib=C}
+  (    1 GND )
+  (    2 +5V )
+ )
+ ( /50BD0AF2 40xx-SO16  IC3 4094D {Lib=4094D}
+  (    1 /STROBE )
+  (    2 N-000033 )
+  (    3 /SER_CLK )
+  (    4 /word_clock_leds/LED9_CTRL )
+  (    5 /word_clock_leds/LED10_CTRL )
+  (    6 /word_clock_leds/LED11_CTRL )
+  (    7 /word_clock_leds/LED12_CTRL )
+  (    8 GND )
+  (    9 N-000054 )
+  (   10 ? )
+  (   11 /word_clock_leds/LED16_CTRL )
+  (   12 /word_clock_leds/LED15_CTRL )
+  (   13 /word_clock_leds/LED14_CTRL )
+  (   14 /word_clock_leds/LED13_CTRL )
+  (   15 /OE )
+  (   16 +5V )
+ )
+ ( /50BD0AF0 40xx-SO16  IC2 4094D {Lib=4094D}
+  (    1 /STROBE )
+  (    2 /DATA_IN )
+  (    3 /SER_CLK )
+  (    4 /word_clock_leds/LED1_CTRL )
+  (    5 /word_clock_leds/LED2_CTRL )
+  (    6 /word_clock_leds/LED3_CTRL )
+  (    7 /word_clock_leds/LED4_CTRL )
+  (    8 GND )
+  (    9 N-000033 )
+  (   10 ? )
+  (   11 /word_clock_leds/LED8_CTRL )
+  (   12 /word_clock_leds/LED7_CTRL )
+  (   13 /word_clock_leds/LED6_CTRL )
+  (   14 /word_clock_leds/LED5_CTRL )
+  (   15 /OE )
+  (   16 +5V )
+ )
+ ( /50BD0AED 40xx-SO16  IC4 4094D {Lib=4094D}
+  (    1 /STROBE )
+  (    2 N-000054 )
+  (    3 /SER_CLK )
+  (    4 /word_clock_leds/LED17_CTRL )
+  (    5 /word_clock_leds/LED18_CTRL )
+  (    6 /word_clock_leds/LED19_CTRL )
+  (    7 /word_clock_leds/LED20_CTRL )
+  (    8 GND )
+  (    9 ? )
+  (   10 ? )
+  (   11 ? )
+  (   12 ? )
+  (   13 /word_clock_leds/LED22_CTRL )
+  (   14 /word_clock_leds/LED21_CTRL )
+  (   15 /OE )
+  (   16 +5V )
+ )
+ ( /50BD0A71 $noname  R2 10k {Lib=R}
+  (    1 /SCLK )
+  (    2 +5V )
+ )
+ ( /50BD0A6F $noname  R1 10k {Lib=R}
+  (    1 /SDA )
+  (    2 +5V )
+ )
+ ( /50BD09C3 $noname  R5 10k {Lib=R}
+  (    1 /HOUR_BTN )
+  (    2 +5V )
+ )
+ ( /50BD09BD $noname  R4 10k {Lib=R}
+  (    1 /MIN_BTN )
+  (    2 +5V )
+ )
+ ( /50BD098E $noname  P3 CONN_2 {Lib=CONN_2}
+  (    1 /HOUR_BTN )
+  (    2 GND )
+ )
+ ( /50BD0989 $noname  P2 CONN_2 {Lib=CONN_2}
+  (    1 /MIN_BTN )
+  (    2 GND )
+ )
+ ( /50BD095D $noname  R3 10k {Lib=R}
+  (    1 +5V )
+  (    2 N-000043 )
+ )
+ ( /50BD08F4 $noname  BT1 BATTERY {Lib=BATTERY}
+  (    1 N-000005 )
+  (    2 GND )
+ )
+ ( /50BD07CA $noname  C8 15p {Lib=C}
+  (    1 GND )
+  (    2 N-000002 )
+ )
+ ( /50BD07C4 $noname  C7 15p {Lib=C}
+  (    1 GND )
+  (    2 N-000003 )
+ )
+ ( /50BD02C4 $noname  C2 10u {Lib=CP1}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /50BD02C0 $noname  C1 10u {Lib=CP1}
+  (    1 +12V )
+  (    2 GND )
+ )
+ ( /50BD0266 $noname  P1 CONN_2 {Lib=CONN_2}
+  (    1 +12V )
+  (    2 GND )
+ )
+ ( /50BD021D $noname  U1 TS2940W50 {Lib=TS2940W50}
+  (    1 +12V )
+  (    2 GND )
+  (    3 +5V )
+ )
+ ( /50BCFF2D $noname  X2 12MHz {Lib=CRYSTAL}
+  (    1 N-000003 )
+  (    2 N-000002 )
+ )
+ ( /50BCFF0C $noname  U2 DS1307 {Lib=DS1307}
+  (    1 N-000058 )
+  (    2 N-000001 )
+  (    3 N-000005 )
+  (    4 GND )
+  (    5 /SDA )
+  (    6 /SCLK )
+  (    7 /SQW_INT )
+  (    8 +5V )
+ )
+ ( /50BC46BD DIL28  IC1 ATMEGA328P-P {Lib=ATMEGA328P-P}
+  (    1 N-000043 )
+  (    2 ? )
+  (    3 ? )
+  (    4 ? )
+  (    5 ? )
+  (    6 /MIN_BTN )
+  (    7 +5V )
+  (    8 GND )
+  (    9 N-000003 )
+  (   10 N-000002 )
+  (   11 /HOUR_BTN )
+  (   12 /SDA )
+  (   13 /SCLK )
+  (   14 ? )
+  (   15 /SQW_INT )
+  (   16 /SER_CLK )
+  (   17 /DATA_IN )
+  (   18 /STROBE )
+  (   19 /OE )
+  (   20 +5V )
+  (   21 GND )
+  (   22 GND )
+  (   23 ? )
+  (   24 ? )
+  (   25 ? )
+  (   26 ? )
+  (   27 ? )
+  (   28 ? )
+ )
+ ( /50BC4A88/50BCF5C4 $noname  P6 HE10-16 {Lib=HE10-16}
+  (    1 /word_clock_leds/LED17_P )
+  (    2 /word_clock_leds/LED17_N )
+  (    3 /word_clock_leds/LED18_P )
+  (    4 /word_clock_leds/LED18_N )
+  (    5 /word_clock_leds/LED19_P )
+  (    6 /word_clock_leds/LED19_N )
+  (    7 /word_clock_leds/LED20_P )
+  (    8 /word_clock_leds/LED20_N )
+  (    9 /word_clock_leds/LED21_P )
+  (   10 /word_clock_leds/LED21_N )
+  (   11 /word_clock_leds/LED22_P )
+  (   12 /word_clock_leds/LED22_N )
+  (   13 ? )
+  (   14 ? )
+  (   15 ? )
+  (   16 ? )
+ )
+ ( /50BC4A88/50BCF5C0 $noname  P5 HE10-16 {Lib=HE10-16}
+  (    1 /word_clock_leds/LED9_P )
+  (    2 /word_clock_leds/LED9_N )
+  (    3 /word_clock_leds/LED10_P )
+  (    4 /word_clock_leds/LED10_N )
+  (    5 /word_clock_leds/LED11_P )
+  (    6 /word_clock_leds/LED11_N )
+  (    7 /word_clock_leds/LED12_P )
+  (    8 /word_clock_leds/LED12_N )
+  (    9 /word_clock_leds/LED13_P )
+  (   10 /word_clock_leds/LED13_N )
+  (   11 /word_clock_leds/LED14_P )
+  (   12 /word_clock_leds/LED14_N )
+  (   13 /word_clock_leds/LED15_P )
+  (   14 /word_clock_leds/LED15_N )
+  (   15 /word_clock_leds/LED16_P )
+  (   16 /word_clock_leds/LED16_N )
+ )
+ ( /50BC4A88/50BCF5B8 $noname  P4 HE10-16 {Lib=HE10-16}
+  (    1 /word_clock_leds/LED1_P )
+  (    2 /word_clock_leds/LED1_N )
+  (    3 /word_clock_leds/LED2_P )
+  (    4 /word_clock_leds/LED2_N )
+  (    5 /word_clock_leds/LED3_P )
+  (    6 /word_clock_leds/LED3_N )
+  (    7 /word_clock_leds/LED4_P )
+  (    8 /word_clock_leds/LED4_N )
+  (    9 /word_clock_leds/LED5_P )
+  (   10 /word_clock_leds/LED5_N )
+  (   11 /word_clock_leds/LED6_P )
+  (   12 /word_clock_leds/LED6_N )
+  (   13 /word_clock_leds/LED7_P )
+  (   14 /word_clock_leds/LED7_N )
+  (   15 /word_clock_leds/LED8_P )
+  (   16 /word_clock_leds/LED8_N )
+ )
+ ( /50BC4A88/50BC4D44 $noname  Q21 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000078 )
+  (    3 /word_clock_leds/LED22_N )
+ )
+ ( /50BC4A88/50BC4D43 $noname  Q20 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED22_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D40 $noname  R16 100 {Lib=R}
+  (    1 N-000078 )
+  (    2 /word_clock_leds/LED22_CTRL )
+ )
+ ( /50BC4A88/50BC4D3F $noname  R11 100 {Lib=R}
+  (    1 N-000084 )
+  (    2 /word_clock_leds/LED21_CTRL )
+ )
+ ( /50BC4A88/50BC4D3C $noname  Q10 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED21_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D3B $noname  Q11 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000084 )
+  (    3 /word_clock_leds/LED21_N )
+ )
+ ( /50BC4A88/50BC4D3A $noname  Q3 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000085 )
+  (    3 /word_clock_leds/LED1_N )
+ )
+ ( /50BC4A88/50BC4D39 $noname  Q2 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED1_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D36 $noname  R7 100 {Lib=R}
+  (    1 N-000085 )
+  (    2 /word_clock_leds/LED1_CTRL )
+ )
+ ( /50BC4A88/50BC4D35 $noname  R8 100 {Lib=R}
+  (    1 N-000082 )
+  (    2 /word_clock_leds/LED6_CTRL )
+ )
+ ( /50BC4A88/50BC4D32 $noname  Q4 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED6_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D31 $noname  Q5 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000082 )
+  (    3 /word_clock_leds/LED6_N )
+ )
+ ( /50BC4A88/50BC4D30 $noname  Q9 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000062 )
+  (    3 /word_clock_leds/LED16_N )
+ )
+ ( /50BC4A88/50BC4D2F $noname  Q8 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED16_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D2C $noname  R10 100 {Lib=R}
+  (    1 N-000062 )
+  (    2 /word_clock_leds/LED16_CTRL )
+ )
+ ( /50BC4A88/50BC4D2B $noname  R9 100 {Lib=R}
+  (    1 N-000063 )
+  (    2 /word_clock_leds/LED11_CTRL )
+ )
+ ( /50BC4A88/50BC4D28 $noname  Q6 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED11_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D27 $noname  Q7 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000063 )
+  (    3 /word_clock_leds/LED11_N )
+ )
+ ( /50BC4A88/50BC4D26 $noname  Q39 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000060 )
+  (    3 /word_clock_leds/LED5_N )
+ )
+ ( /50BC4A88/50BC4D25 $noname  Q38 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED5_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D22 $noname  R25 100 {Lib=R}
+  (    1 N-000060 )
+  (    2 /word_clock_leds/LED5_CTRL )
+ )
+ ( /50BC4A88/50BC4D21 $noname  R26 100 {Lib=R}
+  (    1 N-000066 )
+  (    2 /word_clock_leds/LED10_CTRL )
+ )
+ ( /50BC4A88/50BC4D1E $noname  Q40 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED10_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D1D $noname  Q41 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000066 )
+  (    3 /word_clock_leds/LED10_N )
+ )
+ ( /50BC4A88/50BC4D1C $noname  Q45 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000067 )
+  (    3 /word_clock_leds/LED20_N )
+ )
+ ( /50BC4A88/50BC4D1B $noname  Q44 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED20_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D18 $noname  R28 100 {Lib=R}
+  (    1 N-000067 )
+  (    2 /word_clock_leds/LED20_CTRL )
+ )
+ ( /50BC4A88/50BC4D17 $noname  R27 100 {Lib=R}
+  (    1 N-000064 )
+  (    2 /word_clock_leds/LED15_CTRL )
+ )
+ ( /50BC4A88/50BC4D14 $noname  Q42 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED15_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D13 $noname  Q43 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000064 )
+  (    3 /word_clock_leds/LED15_N )
+ )
+ ( /50BC4A88/50BC4D12 $noname  R19 100 {Lib=R}
+  (    1 N-000093 )
+  (    2 /word_clock_leds/LED13_CTRL )
+ )
+ ( /50BC4A88/50BC4D0F $noname  Q26 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED13_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D0E $noname  Q27 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000093 )
+  (    3 /word_clock_leds/LED13_N )
+ )
+ ( /50BC4A88/50BC4D0D $noname  Q17 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000094 )
+  (    3 /word_clock_leds/LED12_N )
+ )
+ ( /50BC4A88/50BC4D0C $noname  Q16 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED12_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D09 $noname  R14 100 {Lib=R}
+  (    1 N-000094 )
+  (    2 /word_clock_leds/LED12_CTRL )
+ )
+ ( /50BC4A88/50BC4D08 $noname  Q35 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000092 )
+  (    3 /word_clock_leds/LED14_N )
+ )
+ ( /50BC4A88/50BC4D07 $noname  Q34 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED14_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4D04 $noname  R23 100 {Lib=R}
+  (    1 N-000092 )
+  (    2 /word_clock_leds/LED14_CTRL )
+ )
+ ( /50BC4A88/50BC4D03 $noname  R24 100 {Lib=R}
+  (    1 N-000098 )
+  (    2 /word_clock_leds/LED19_CTRL )
+ )
+ ( /50BC4A88/50BC4D00 $noname  Q36 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED19_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CFF $noname  Q37 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000098 )
+  (    3 /word_clock_leds/LED19_N )
+ )
+ ( /50BC4A88/50BC4CFE $noname  R15 100 {Lib=R}
+  (    1 N-000100 )
+  (    2 /word_clock_leds/LED17_CTRL )
+ )
+ ( /50BC4A88/50BC4CFB $noname  Q18 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED17_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CFA $noname  Q19 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000100 )
+  (    3 /word_clock_leds/LED17_N )
+ )
+ ( /50BC4A88/50BC4CF9 $noname  Q29 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000095 )
+  (    3 /word_clock_leds/LED18_N )
+ )
+ ( /50BC4A88/50BC4CF8 $noname  Q28 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED18_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CF5 $noname  R20 100 {Lib=R}
+  (    1 N-000095 )
+  (    2 /word_clock_leds/LED18_CTRL )
+ )
+ ( /50BC4A88/50BC4CF4 $noname  R18 100 {Lib=R}
+  (    1 N-000096 )
+  (    2 /word_clock_leds/LED8_CTRL )
+ )
+ ( /50BC4A88/50BC4CF1 $noname  Q24 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED8_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CF0 $noname  Q25 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000096 )
+  (    3 /word_clock_leds/LED8_N )
+ )
+ ( /50BC4A88/50BC4CEF $noname  Q15 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000087 )
+  (    3 /word_clock_leds/LED7_N )
+ )
+ ( /50BC4A88/50BC4CEE $noname  Q14 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED7_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CEB $noname  R13 100 {Lib=R}
+  (    1 N-000087 )
+  (    2 /word_clock_leds/LED7_CTRL )
+ )
+ ( /50BC4A88/50BC4CEA $noname  Q33 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000086 )
+  (    3 /word_clock_leds/LED9_N )
+ )
+ ( /50BC4A88/50BC4CE9 $noname  Q32 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED9_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CE6 $noname  R22 100 {Lib=R}
+  (    1 N-000086 )
+  (    2 /word_clock_leds/LED9_CTRL )
+ )
+ ( /50BC4A88/50BC4CDC $noname  R21 100 {Lib=R}
+  (    1 N-000090 )
+  (    2 /word_clock_leds/LED4_CTRL )
+ )
+ ( /50BC4A88/50BC4CD9 $noname  Q30 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED4_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CD8 $noname  Q31 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000090 )
+  (    3 /word_clock_leds/LED4_N )
+ )
+ ( /50BC4A88/50BC4CD3 $noname  R12 100 {Lib=R}
+  (    1 N-000091 )
+  (    2 /word_clock_leds/LED2_CTRL )
+ )
+ ( /50BC4A88/50BC4CD0 $noname  Q12 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED2_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CCF $noname  Q13 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000091 )
+  (    3 /word_clock_leds/LED2_N )
+ )
+ ( /50BC4A88/50BC4CB7 $noname  Q1 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/current_ref )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4CB5 $noname  R6 R {Lib=R}
+  (    1 /word_clock_leds/current_ref )
+  (    2 N-000088 )
+ )
+ ( /50BC4A88/50BC4CB3 $noname  P7 CONN_2 {Lib=CONN_2}
+  (    1 N-000088 )
+  (    2 GND )
+ )
+ ( /50BC4A88/50BC4C60 $noname  Q23 NPN {Lib=NPN}
+  (    1 GND )
+  (    2 N-000089 )
+  (    3 /word_clock_leds/LED3_N )
+ )
+ ( /50BC4A88/50BC4C5F $noname  Q22 MOSFET_P {Lib=MOSFET_P}
+  (    D /word_clock_leds/LED3_P )
+  (    G /word_clock_leds/current_ref )
+  (    S +12V )
+ )
+ ( /50BC4A88/50BC4C5C $noname  R17 100 {Lib=R}
+  (    1 N-000089 )
+  (    2 /word_clock_leds/LED3_CTRL )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component C8
+ SM*
+ C?
+ C1-1
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component C2
+ CP*
+ SM*
+$endlist
+$component C1
+ CP*
+ SM*
+$endlist
+$component IC1
+ 28DIP-ELL600
+ 28dip600
+$endlist
+$component R16
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R25
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R26
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R28
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R27
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R19
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R14
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R23
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R24
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R15
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R20
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R18
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R13
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R22
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R21
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R12
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R17
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ U2 2
+ X1 2
+Net 2 "" ""
+ IC1 10
+ C8 2
+ X2 2
+Net 3 "" ""
+ X2 1
+ C7 2
+ IC1 9
+Net 4 "+12V" "+12V"
+ Q16 S
+ Q26 S
+ Q8 S
+ Q42 S
+ Q34 S
+ Q1 S
+ Q12 S
+ Q18 S
+ Q36 S
+ Q28 S
+ Q38 S
+ Q4 S
+ Q2 S
+ Q20 S
+ Q44 S
+ Q6 S
+ Q40 S
+ Q30 S
+ Q22 S
+ Q14 S
+ Q24 S
+ Q32 S
+ Q10 S
+ P1 1
+ C1 1
+ U1 1
+Net 5 "" ""
+ BT1 1
+ U2 3
+Net 13 "/HOUR_BTN" "HOUR_BTN"
+ IC1 11
+ R5 1
+ P3 1
+Net 14 "GND" "GND"
+ C1 2
+ Q15 1
+ Q25 1
+ C2 2
+ Q23 1
+ Q9 1
+ P7 2
+ Q33 1
+ Q21 1
+ Q39 1
+ Q45 1
+ Q7 1
+ Q41 1
+ Q3 1
+ Q11 1
+ P1 2
+ U1 2
+ C6 1
+ C5 1
+ C4 1
+ C3 1
+ Q5 1
+ Q37 1
+ BT1 2
+ U2 4
+ C8 1
+ Q29 1
+ C7 1
+ IC1 22
+ IC1 21
+ IC1 8
+ P3 2
+ P2 2
+ Q19 1
+ Q35 1
+ Q31 1
+ Q13 1
+ IC4 8
+ Q17 1
+ Q43 1
+ IC3 8
+ Q27 1
+ IC2 8
+Net 15 "/MIN_BTN" "MIN_BTN"
+ IC1 6
+ R4 1
+ P2 1
+Net 19 "/word clock leds/LED13_CTRL" "LED13_CTRL"
+ IC3 14
+ R19 2
+Net 20 "/word clock leds/LED3_CTRL" "LED3_CTRL"
+ R17 2
+ IC2 6
+Net 21 "/word clock leds/LED4_CTRL" "LED4_CTRL"
+ R21 2
+ IC2 7
+Net 22 "/word clock leds/LED9_CTRL" "LED9_CTRL"
+ R22 2
+ IC3 4
+Net 23 "/word clock leds/LED7_CTRL" "LED7_CTRL"
+ R13 2
+ IC2 12
+Net 24 "/word clock leds/LED17_CTRL" "LED17_CTRL"
+ R15 2
+ IC4 4
+Net 26 "/word clock leds/LED15_CTRL" "LED15_CTRL"
+ IC3 12
+ R27 2
+Net 27 "/word clock leds/LED5_CTRL" "LED5_CTRL"
+ R25 2
+ IC2 14
+Net 28 "/word clock leds/LED11_CTRL" "LED11_CTRL"
+ R9 2
+ IC3 6
+Net 29 "/word clock leds/LED21_CTRL" "LED21_CTRL"
+ R11 2
+ IC4 14
+Net 30 "/word clock leds/LED1_CTRL" "LED1_CTRL"
+ R7 2
+ IC2 4
+Net 31 "/word clock leds/LED20_CTRL" "LED20_CTRL"
+ R28 2
+ IC4 7
+Net 32 "/word clock leds/LED10_CTRL" "LED10_CTRL"
+ IC3 5
+ R26 2
+Net 33 "" ""
+ IC3 2
+ IC2 9
+Net 34 "/STROBE" "STROBE"
+ IC2 1
+ IC4 1
+ IC3 1
+ IC1 18
+Net 35 "/word clock leds/LED22_CTRL" "LED22_CTRL"
+ R16 2
+ IC4 13
+Net 40 "/word clock leds/LED19_CTRL" "LED19_CTRL"
+ IC4 6
+ R24 2
+Net 41 "/word clock leds/LED18_CTRL" "LED18_CTRL"
+ IC4 5
+ R20 2
+Net 42 "/SQW_INT" "SQW_INT"
+ U2 7
+ IC1 15
+Net 43 "" ""
+ IC1 1
+ R3 2
+Net 44 "/OE" "OE"
+ IC1 19
+ IC2 15
+ IC3 15
+ IC4 15
+Net 45 "/word clock leds/LED6_CTRL" "LED6_CTRL"
+ IC2 13
+ R8 2
+Net 46 "/word clock leds/LED8_CTRL" "LED8_CTRL"
+ IC2 11
+ R18 2
+Net 48 "/word clock leds/LED2_CTRL" "LED2_CTRL"
+ IC2 5
+ R12 2
+Net 49 "/SER_CLK" "SER_CLK"
+ IC1 16
+ IC3 3
+ IC2 3
+ IC4 3
+Net 50 "/DATA_IN" "DATA_IN"
+ IC2 2
+ IC1 17
+Net 51 "/word clock leds/LED14_CTRL" "LED14_CTRL"
+ R23 2
+ IC3 13
+Net 52 "/word clock leds/LED16_CTRL" "LED16_CTRL"
+ R10 2
+ IC3 11
+Net 54 "" ""
+ IC3 9
+ IC4 2
+Net 55 "/word clock leds/LED12_CTRL" "LED12_CTRL"
+ IC3 7
+ R14 2
+Net 56 "+5V" "+5V"
+ IC2 16
+ R1 2
+ U1 3
+ C3 2
+ R3 1
+ IC4 16
+ U2 8
+ R2 2
+ C2 1
+ IC3 16
+ IC1 20
+ IC1 7
+ C4 2
+ R5 2
+ R4 2
+ C6 2
+ C5 2
+Net 57 "/SDA" "SDA"
+ U2 5
+ IC1 12
+ R1 1
+Net 58 "" ""
+ X1 1
+ U2 1
+Net 59 "/SCLK" "SCLK"
+ U2 6
+ IC1 13
+ R2 1
+Net 60 "" ""
+ Q39 2
+ R25 1
+Net 61 "/word clock leds/current_ref" "current_ref"
+ Q18 G
+ Q26 G
+ Q36 G
+ Q28 G
+ Q16 G
+ Q20 G
+ Q2 G
+ Q4 G
+ Q10 G
+ Q32 G
+ Q8 G
+ Q42 G
+ Q34 G
+ Q38 G
+ Q40 G
+ Q6 G
+ Q44 G
+ Q22 G
+ Q1 G
+ Q1 D
+ R6 1
+ Q30 G
+ Q12 G
+ Q24 G
+ Q14 G
+Net 62 "" ""
+ Q9 2
+ R10 1
+Net 63 "" ""
+ R9 1
+ Q7 2
+Net 64 "" ""
+ Q43 2
+ R27 1
+Net 66 "" ""
+ R26 1
+ Q41 2
+Net 67 "" ""
+ R28 1
+ Q45 2
+Net 68 "/word clock leds/LED20_P" "LED20_P"
+ P6 7
+ Q44 D
+Net 69 "/word clock leds/LED8_N" "LED8_N"
+ Q25 3
+ P4 16
+Net 70 "/word clock leds/LED4_N" "LED4_N"
+ Q31 3
+ P4 8
+Net 71 "/word clock leds/LED5_P" "LED5_P"
+ Q38 D
+ P4 9
+Net 72 "/word clock leds/LED6_N" "LED6_N"
+ Q5 3
+ P4 12
+Net 73 "/word clock leds/LED7_P" "LED7_P"
+ P4 13
+ Q14 D
+Net 74 "/word clock leds/LED8_P" "LED8_P"
+ P4 15
+ Q24 D
+Net 75 "/word clock leds/LED3_P" "LED3_P"
+ Q22 D
+ P4 5
+Net 76 "/word clock leds/LED10_P" "LED10_P"
+ Q40 D
+ P5 3
+Net 77 "/word clock leds/LED12_P" "LED12_P"
+ P5 7
+ Q16 D
+Net 78 "" ""
+ R16 1
+ Q21 2
+Net 79 "/word clock leds/LED14_P" "LED14_P"
+ Q34 D
+ P5 11
+Net 80 "/word clock leds/LED1_P" "LED1_P"
+ P4 1
+ Q2 D
+Net 81 "/word clock leds/LED2_N" "LED2_N"
+ Q13 3
+ P4 4
+Net 82 "" ""
+ R8 1
+ Q5 2
+Net 83 "/word clock leds/LED21_P" "LED21_P"
+ Q10 D
+ P6 9
+Net 84 "" ""
+ R11 1
+ Q11 2
+Net 85 "" ""
+ Q3 2
+ R7 1
+Net 86 "" ""
+ R22 1
+ Q33 2
+Net 87 "" ""
+ R13 1
+ Q15 2
+Net 88 "" ""
+ R6 2
+ P7 1
+Net 89 "" ""
+ R17 1
+ Q23 2
+Net 90 "" ""
+ Q31 2
+ R21 1
+Net 91 "" ""
+ R12 1
+ Q13 2
+Net 92 "" ""
+ R23 1
+ Q35 2
+Net 93 "" ""
+ Q27 2
+ R19 1
+Net 94 "" ""
+ R14 1
+ Q17 2
+Net 95 "" ""
+ R20 1
+ Q29 2
+Net 96 "" ""
+ R18 1
+ Q25 2
+Net 97 "/word clock leds/LED19_P" "LED19_P"
+ Q36 D
+ P6 5
+Net 98 "" ""
+ Q37 2
+ R24 1
+Net 99 "/word clock leds/LED17_P" "LED17_P"
+ Q18 D
+ P6 1
+Net 100 "" ""
+ Q19 2
+ R15 1
+Net 101 "/word clock leds/LED18_P" "LED18_P"
+ P6 3
+ Q28 D
+Net 102 "/word clock leds/LED12_N" "LED12_N"
+ P5 8
+ Q17 3
+Net 103 "/word clock leds/LED22_N" "LED22_N"
+ P6 12
+ Q21 3
+Net 104 "/word clock leds/LED20_N" "LED20_N"
+ Q45 3
+ P6 8
+Net 105 "/word clock leds/LED18_N" "LED18_N"
+ P6 4
+ Q29 3
+Net 106 "/word clock leds/LED16_N" "LED16_N"
+ P5 16
+ Q9 3
+Net 107 "/word clock leds/LED15_N" "LED15_N"
+ P5 14
+ Q43 3
+Net 108 "/word clock leds/LED14_N" "LED14_N"
+ Q35 3
+ P5 12
+Net 109 "/word clock leds/LED13_N" "LED13_N"
+ Q27 3
+ P5 10
+Net 110 "/word clock leds/LED11_N" "LED11_N"
+ Q7 3
+ P5 6
+Net 111 "/word clock leds/LED10_N" "LED10_N"
+ P5 4
+ Q41 3
+Net 112 "/word clock leds/LED9_N" "LED9_N"
+ P5 2
+ Q33 3
+Net 113 "/word clock leds/LED6_P" "LED6_P"
+ Q4 D
+ P4 11
+Net 114 "/word clock leds/LED4_P" "LED4_P"
+ P4 7
+ Q30 D
+Net 115 "/word clock leds/LED2_P" "LED2_P"
+ Q12 D
+ P4 3
+Net 116 "/word clock leds/LED22_P" "LED22_P"
+ P6 11
+ Q20 D
+Net 117 "/word clock leds/LED16_P" "LED16_P"
+ Q8 D
+ P5 15
+Net 118 "/word clock leds/LED11_P" "LED11_P"
+ Q6 D
+ P5 5
+Net 119 "/word clock leds/LED13_P" "LED13_P"
+ P5 9
+ Q26 D
+Net 120 "/word clock leds/LED15_P" "LED15_P"
+ P5 13
+ Q42 D
+Net 121 "/word clock leds/LED7_N" "LED7_N"
+ P4 14
+ Q15 3
+Net 122 "/word clock leds/LED5_N" "LED5_N"
+ Q39 3
+ P4 10
+Net 123 "/word clock leds/LED3_N" "LED3_N"
+ Q23 3
+ P4 6
+Net 124 "/word clock leds/LED1_N" "LED1_N"
+ Q3 3
+ P4 2
+Net 125 "/word clock leds/LED17_N" "LED17_N"
+ P6 2
+ Q19 3
+Net 126 "/word clock leds/LED19_N" "LED19_N"
+ Q37 3
+ P6 6
+Net 127 "/word clock leds/LED21_N" "LED21_N"
+ P6 10
+ Q11 3
+Net 130 "/word clock leds/LED9_P" "LED9_P"
+ Q32 D
+ P5 1
+}
+#End

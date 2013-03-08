@@ -11,14 +11,14 @@
 #define VOR     23
 
 struct time {
-  char minutes;
-  char hours;
+  unsigned char  minutes;
+  unsigned char  hours;
 };
 
 
-char time_leds[] = {'0', '0', '0'};
+unsigned char  leds[] = {0, 0, 0};
 
-char hour_bit_mapping [12] =
+const unsigned char  hour_bit_mapping [12] =
   // map numbers to bit positions
   //#1   2  3   4    5  6   7  8  9  10 11  12
    { 9, 10, 11, 13, 14, 15, 2, 3, 4, 5, 12, 6};   

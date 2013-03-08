@@ -10,16 +10,22 @@
 #define MIN_BTN     4
 #define HR_BTN     5
 
-#define CLK_WAIT   50 //clock wait in us
+#define CLK_WAIT   100 //clock wait in us
 #define DEBOUNCE_WAIT 10 //wait in ms
 #define ADJ_TIMEOUT 3000 //adjustment time-out in ms we wait before we go back into "clock" mode
 
 RTC_DS1307 RTC;
 
-void write_leds(char leds[3]){
-
-  char i, j;
-  char worker = 0;
+void write_leds(){
+ 
+  unsigned char i, j;
+  unsigned char worker = 0;
+  unsigned char debug_i;
+  
+  Serial.print("---0x");
+  for(debug_i = 3; debug_i > 0 ; debug_i--){
+      Serial.print(leds[debug_i-1], HEX);
+  }
   
   digitalWrite(CLK, LOW);
   //digitalWrite(OE, LOW);
@@ -28,7 +34,7 @@ void write_leds(char leds[3]){
   
   for(i=0; i<3; i++){
     for(j=0; j<8; j++){
-      //null other bits than the one we send out
+      //null other bits except the one we send out
       worker = leds[i] & (1 << j);
       if(worker)
         digitalWrite(DATA, HIGH);
@@ -50,15 +56,15 @@ void write_leds(char leds[3]){
 }
 
 
-void clear_leds(char leds[3]){
- char i;
+void clear_leds(){
+ unsigned char i;
  
  for(i=0;i<3;i++)
    leds[i]=0;
 
 }
 
-void clear_led_bit(char bit_num, char leds[3]){
+void clear_led_bit(unsigned char bit_num){
   int array_num, bit_number;
   
   array_num = bit_num/8;
@@ -67,93 +73,93 @@ void clear_led_bit(char bit_num, char leds[3]){
 
 }
 
-void set_led_bit(char bit_num, char leds[3]){
+void set_led_bit(unsigned char bit_num){
   int array_num, bit_number;
   
   array_num = bit_num/8;
   bit_number = 1 << (bit_num %8); 
   leds[array_num] |= bit_number;
-
-}
-
-void set_adjust_led_hr(char hours, char leds[3]){
-
-    set_led_bit(hour_bit_mapping[hours-1], leds);
-}
-
-
-void set_adjust_led_min(char minutes, char leds[3]){
-
-  char min_tmp;
   
-  clear_leds(leds);
+}
+
+void set_adjust_led_hr(unsigned char hours){
+
+    set_led_bit(hour_bit_mapping[hours-1]);
+}
+
+
+void set_adjust_led_min(unsigned char minutes){
+
+  unsigned char min_tmp;
+  
+  clear_leds();
 
   if(minutes == 0){
-    set_led_bit(UHR, leds);
+    set_led_bit(UHR);
     return;
   }
     
 
   if(minutes < 10){
   //use hour leds for minutes 1 to 10
-    set_led_bit(hour_bit_mapping[minutes-1], leds);
+    set_led_bit(hour_bit_mapping[minutes-1]);
     return;
   }
   
   if(minutes == 10){
-    set_led_bit(ZEHN, leds);
+    set_led_bit(ZEHN);
     return;
   }
     
   if(minutes < 20){
   //use hour leds and "zehn"
-    set_led_bit(ZEHN, leds);
-    set_led_bit(hour_bit_mapping[(minutes-10)-1], leds);
+    set_led_bit(ZEHN);
+    set_led_bit(hour_bit_mapping[(minutes-10)-1]);
     return;
   }
 
    if(minutes < 30){
     //use hour leds and "halb"
-    set_led_bit(ZWANZIG, leds);
-    set_led_bit(hour_bit_mapping[(minutes-20)-1], leds);
+    set_led_bit(ZWANZIG);
+    set_led_bit(hour_bit_mapping[(minutes-20)-1]);
     return;
   }
 
   if(minutes < 40){
     //use hour leds and "halb"
-    set_led_bit(HALB, leds);
-    set_led_bit(hour_bit_mapping[(minutes-30)-1], leds);
+    set_led_bit(HALB);
+    set_led_bit(hour_bit_mapping[(minutes-30)-1]);
     return;
   }
   
   if(minutes < 60){
     //now we change the direction around and use "vor"
-    set_led_bit(VOR, leds);
+    set_led_bit(VOR);
     min_tmp=60-minutes;
     
    if(min_tmp == 20){
-      set_led_bit(ZWANZIG, leds);
+      set_led_bit(ZWANZIG);
       return;
     }
     if(min_tmp >= 10){
-      set_led_bit(ZEHN, leds);
+      set_led_bit(ZEHN);
       if(min_tmp != 10)
-        set_led_bit(hour_bit_mapping[min_tmp - 10 -1], leds);
+        set_led_bit(hour_bit_mapping[min_tmp - 10 -1]);
       return;
     }
     
     if(min_tmp < 10){
-      set_led_bit(hour_bit_mapping[min_tmp-1], leds);
+      set_led_bit(hour_bit_mapping[min_tmp-1]);
       return;
     }
    return;
   }
 }
 
-struct time adjustTime(char min_adj, char hr_adj, char leds[3]){
-  char minutes, hours;
-  char button_pressed=10;
-  char minute_active=0, hour_active=0;
+struct time adjustTime(unsigned char min_adj, unsigned char hr_adj){
+  unsigned char minutes, hours;
+  unsigned char button_pressed=10;
+  unsigned char minute_active=0, hour_active=0;
   
   struct time adj_time;
   
@@ -174,9 +180,9 @@ struct time adjustTime(char min_adj, char hr_adj, char leds[3]){
        else
          minutes=0;
        
-       clear_leds(leds);
-       set_adjust_led_min(minutes, leds);
-       write_leds(leds);
+       clear_leds();
+       set_adjust_led_min(minutes);
+       write_leds();
      }
      
      if(!hour_active && (digitalRead(HR_BTN)==0)){
@@ -186,9 +192,9 @@ struct time adjustTime(char min_adj, char hr_adj, char leds[3]){
          hours++;
        else
          hours=1;
-       clear_leds(leds);
-       set_adjust_led_hr(hours, leds);
-       write_leds(leds);
+       clear_leds();
+       set_adjust_led_hr(hours);
+       write_leds();
      }
    
 
@@ -211,124 +217,132 @@ struct time adjustTime(char min_adj, char hr_adj, char leds[3]){
 }
 
 
-void set_time_led(char hours, char minutes, char leds[3]){
+void set_time_led(unsigned char hours, unsigned char minutes){
    
-  char mod_minutes, five_minutes;
-  
-  mod_minutes = minutes % 5;
+  unsigned char five_minutes;
+  unsigned char debug_i;
+
   five_minutes = minutes / 5;
-  
-  //only do something for five minute increments
-  if(mod_minutes==0){
-  
-    clear_leds(leds);
-    set_led_bit(ES, leds);
-    set_led_bit(IST, leds);
+
+  Serial.print("-:0x");
+    for(debug_i = 3; debug_i > 0 ; debug_i--){
+      Serial.print(leds[debug_i-1], HEX);
+    }
+
+    clear_leds();
+    set_led_bit(ES);
+    set_led_bit(IST);
   
     
     switch(five_minutes){
       case 0: //exact hour
-        set_led_bit(hour_bit_mapping[hours-1], leds);
+        set_led_bit(hour_bit_mapping[hours-1]);
         if(hours != 1)
-          set_led_bit(UHR, leds);
+          set_led_bit(UHR);
         break;
 
       case 1:  //five past  
-        set_led_bit(FUNF, leds);
-        set_led_bit(NACH, leds);
-        set_led_bit(hour_bit_mapping[hours-1], leds);    
+        set_led_bit(FUNF);
+        set_led_bit(NACH);
+        set_led_bit(hour_bit_mapping[hours-1]);    
         break;
     
       case 2: //ten past  
-        set_led_bit(ZEHN, leds);
-        set_led_bit(NACH, leds);
-        set_led_bit(hour_bit_mapping[hours-1], leds);    
+        set_led_bit(ZEHN);
+        set_led_bit(NACH);
+        set_led_bit(hour_bit_mapping[hours-1]);    
         break;
         
       case 3: //quater past  
-        set_led_bit(VIERTEL, leds);
+        set_led_bit(VIERTEL);
         if(hours == 12)
-          set_led_bit(hour_bit_mapping[0], leds);    
+          set_led_bit(hour_bit_mapping[0]);    
         else
-          set_led_bit(hour_bit_mapping[hours], leds);    
+          set_led_bit(hour_bit_mapping[hours]);    
         break;
       
       case 4: // zwanzig past  
-        set_led_bit(ZWANZIG, leds);
-        set_led_bit(NACH, leds);
-        set_led_bit(hour_bit_mapping[hours-1], leds);    
+        set_led_bit(ZWANZIG);
+        set_led_bit(NACH);
+        set_led_bit(hour_bit_mapping[hours-1]);    
         break;
       
       case 5: // fünf und zwanzig past  
-        set_led_bit(FUNF, leds);
-        set_led_bit(VOR, leds);
-        set_led_bit(HALB, leds);
+        set_led_bit(FUNF);
+        set_led_bit(VOR);
+        set_led_bit(HALB);
         if(hours == 12)
-          set_led_bit(hour_bit_mapping[0], leds);    
+          set_led_bit(hour_bit_mapping[0]);    
         else
-          set_led_bit(hour_bit_mapping[hours], leds);    
+          set_led_bit(hour_bit_mapping[hours]);    
         break;
         
       case 6: // halb  
-        set_led_bit(HALB, leds);
+        set_led_bit(HALB);
         if(hours == 12)
-          set_led_bit(hour_bit_mapping[0], leds);    
+          set_led_bit(hour_bit_mapping[0]);    
         else
-          set_led_bit(hour_bit_mapping[hours], leds);    
+          set_led_bit(hour_bit_mapping[hours]);    
         break;
 
       case 7: // fünf nach halb  
-        set_led_bit(FUNF, leds);
-        set_led_bit(NACH, leds);
-        set_led_bit(HALB, leds);
+        set_led_bit(FUNF);
+        set_led_bit(NACH);
+        set_led_bit(HALB);
         if(hours == 12)
-          set_led_bit(hour_bit_mapping[0], leds);    
+          set_led_bit(hour_bit_mapping[0]);    
         else
-          set_led_bit(hour_bit_mapping[hours], leds);    
+          set_led_bit(hour_bit_mapping[hours]);    
         break;
       
        case 8: // zwanzig vor  
-        set_led_bit(ZWANZIG, leds);
-        set_led_bit(VOR, leds);
+        set_led_bit(ZWANZIG);
+        set_led_bit(VOR);
         if(hours == 12)
-          set_led_bit(hour_bit_mapping[0], leds);    
+          set_led_bit(hour_bit_mapping[0]);    
         else
-          set_led_bit(hour_bit_mapping[hours], leds);    
+          set_led_bit(hour_bit_mapping[hours]);    
         break;
 
       case 9: // viertel vor  
-        set_led_bit(VIERTEL, leds);
-        set_led_bit(VOR, leds);
+        set_led_bit(VIERTEL);
+        set_led_bit(VOR);
         if(hours == 12)
-          set_led_bit(hour_bit_mapping[0], leds);    
+          set_led_bit(hour_bit_mapping[0]);    
         else
-          set_led_bit(hour_bit_mapping[hours], leds);    
+          set_led_bit(hour_bit_mapping[hours]);    
         break;
 
       case 10: // zehn vor  
-        set_led_bit(ZEHN, leds);
-        set_led_bit(VOR, leds);
+        set_led_bit(ZEHN);
+        set_led_bit(VOR);
         if(hours == 12)
-          set_led_bit(hour_bit_mapping[0], leds);    
+          set_led_bit(hour_bit_mapping[0]);    
         else
-          set_led_bit(hour_bit_mapping[hours], leds);    
+          set_led_bit(hour_bit_mapping[hours]);    
         break;
 
       case 11: // fünf vor  
-        set_led_bit(FUNF, leds);
-        set_led_bit(VOR, leds);
+        set_led_bit(FUNF);
+        set_led_bit(VOR);
         if(hours == 12)
-          set_led_bit(hour_bit_mapping[0], leds);    
+          set_led_bit(hour_bit_mapping[0]);    
         else
-          set_led_bit(hour_bit_mapping[hours], leds);    
+          set_led_bit(hour_bit_mapping[hours]);    
         break;
     }
-  }    
+ 
+    Serial.print("--:0x");
+    for(debug_i = 3; debug_i > 0 ; debug_i--){
+      Serial.print(leds[debug_i-1], HEX);
+    }
+ 
+    
 }
 
 
 void setup () {
-    Serial.begin(57600);
+    Serial.begin(76800);
     Wire.begin();
     RTC.begin();
     
@@ -348,27 +362,29 @@ void setup () {
 }
 
 void loop () {
-  char i=0;
-  char minutes=0, hours=12;
-  char *min_adj, *hr_adj;
+  unsigned char i=0;
+  unsigned char minutes=0, hours=12;
+  unsigned char mod_minutes=0;
+  static unsigned char done = 0;
+  unsigned char *min_adj, *hr_adj;
   DateTime now = RTC.now();
   struct time time_adj;
+   
+    //delay(500); 
     
-    /*
     Serial.print(now.hour(), DEC);
     Serial.print(':');
     Serial.print(now.minute(), DEC);
     Serial.print(':');
-    Serial.print(now.second(), DEC);
-    Serial.println();
-    */
+    Serial.println(now.second(), DEC);
+       
     
-    clear_leds(time_leds);
+    clear_leds();
     //make sure we put out time first time around
     minutes = now.minute();
     hours = now.hour();
-    set_time_led(hours, (minutes / 5)*5, time_leds);
-    write_leds(time_leds);   
+    set_time_led(hours, (minutes / 5)*5);
+    write_leds();   
   
   
     i=1;
@@ -385,25 +401,47 @@ void loop () {
             
       if(hours == 25)
          hours = 1; 
-      
-      delay(500);
+     
+     if(minutes==5)
+        minutes=6;
+     if(minutes==0)
+        minutes=5;
+    
+    delay(500);
    */
       now=RTC.now();
       minutes = now.minute();
       hours = now.hour();
+          
       if(hours > 12)
          hours = hours - 12;    
 
-      set_time_led(hours, minutes, time_leds);
-      write_leds(time_leds);
+      mod_minutes = minutes % 5;
+    
+    //only do something for five minute increments
+    if((mod_minutes == 0) && (done == 0)){
+  
+      Serial.println(" ");
+      Serial.print("Time: ");
+      Serial.print(hours, DEC);
+      Serial.print(':');
+      Serial.print(minutes, DEC);
+      Serial.print("--");
+      done = 1;
+
+      set_time_led(hours, minutes);
+      write_leds();
+      
+    } else if (mod_minutes > 0)
+        done = 0;
 
     //check if minute of hour button was pressed
       if((digitalRead(HR_BTN) == 0) || (digitalRead(MIN_BTN)==0)){
-        time_adj = adjustTime(minutes, hours, time_leds);
+        time_adj = adjustTime(minutes, hours);
         RTC.adjust(DateTime(0,0,0,time_adj.hours, time_adj.minutes, 0));
        //make sure we put out time again
-        set_time_led(time_adj.hours, (time_adj.minutes / 5)*5, time_leds);
-        write_leds(time_leds);      
+        set_time_led(time_adj.hours, (time_adj.minutes / 5)*5);
+        write_leds();      
     }
 
     }

@@ -361,6 +361,29 @@ void setup () {
   
 }
 
+void test_leds(){
+
+  char i,j;
+  
+  for(j=3;j>0;j--){
+    for(i=0; i<8; i++){
+      //16 .... 24
+      //8 ..... 15
+      //2 ..... 7
+      if(j==1 && (i==0 || i==1))
+        continue;
+      
+      set_led_bit((8*j)-8 + i);
+      write_leds();
+      delay(300);
+      clear_leds();
+    }  
+  }
+
+}
+
+
+
 void loop () {
   unsigned char i=0;
   unsigned char minutes=0, hours=12;
@@ -378,15 +401,17 @@ void loop () {
     Serial.print(':');
     Serial.println(now.second(), DEC);
        
-    
     clear_leds();
+    
+    test_leds();
+    
     //make sure we put out time first time around
     minutes = now.minute();
     hours = now.hour();
     set_time_led(hours, (minutes / 5)*5);
     write_leds();   
   
-  
+ 
     i=1;
    
     while(1){
